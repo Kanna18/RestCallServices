@@ -41,17 +41,17 @@
     isPost=YES;
     NSDictionary *params=@{};
     NSDictionary *headers=@{};
-    [rest restCallurl:@"http://192.168.23.214:8080/IncoisRestAPI/ws/user/register" parametersDict:params headers:headers];
+    [rest restCallurl:@"" parametersDict:params headers:headers];
     
 }
 
 - (IBAction)getMethodClick:(id)sender {
     
     isGet=YES;
-    NSDictionary *params=@{@"date":@"01Feb2017"};
-    NSDictionary *headers=@{@"APP_ID":@"1485153968695"};
+    NSDictionary *params=@{@"":@""};
+    NSDictionary *headers=@{@"":@""};
     
-    [rest restCallurl:@"http://192.168.23.214:8080/IncoisRestAPI/ws/events/TUNAUpload" parametersDict:params headers:headers];
+    [rest restCallurl:@"" parametersDict:params headers:headers];
 }
 
 -(void)jsonResponseWithError:(NSArray *)jsonRespArr jsonDictionary:(NSDictionary *)jsonRespDict error:(NSError *)error
